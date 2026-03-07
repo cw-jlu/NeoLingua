@@ -1,0 +1,40 @@
+2026-03-05 19:04:45.929 | INFO     | app.main:startup:56 - AI Service 启动中... 端口: 8089
+2026-03-05 19:04:45.929 | INFO     | app.tools.base:register:29 - 工具注册成功: 获取当前时间 (get_time)
+2026-03-05 19:04:45.930 | INFO     | app.tools.base:register:29 - 工具注册成功: 联网搜索 (web_search)
+2026-03-05 19:04:45.930 | INFO     | app.tools.builtin_tools:register_builtin_tools:79 - 内置工具注册完成: 获取当前时间, 联网搜索
+2026-03-05 19:04:45.988 | INFO     | app.services.redis_service:get_redis_client:27 - Redis连接成功: localhost:6379/8
+2026-03-05 19:04:46.012 | INFO     | app.main:startup:66 - Redis连接成功
+2026-03-05 19:04:46.012 | INFO     | app.main:startup:70 - AI Service 启动完成
+2026-03-05 19:15:46.976 | ERROR    | app.services.agent_service:process_realtime_audio:701 - 处理实时音频失败: name 'asdict' is not defined
+2026-03-05 19:15:46.986 | ERROR    | app.services.agent_service:get_speaking_assessment:733 - 口语评估失败: module 'app.services.redis_service' has no attribute 'get_data'
+2026-03-05 19:15:47.502 | ERROR    | app.services.agent_service:get_speaking_assessment:733 - 口语评估失败: module 'app.services.redis_service' has no attribute 'get_data'
+2026-03-05 19:15:48.010 | ERROR    | app.services.agent_service:get_speaking_assessment:733 - 口语评估失败: module 'app.services.redis_service' has no attribute 'get_data'
+2026-03-05 19:15:53.361 | INFO     | app.services.memory_service:_init_milvus:31 - Milvus连接成功: localhost:19530
+2026-03-05 19:15:55.586 | INFO     | app.services.memory_service:_ensure_collection:86 - Collection 创建成功: user_memories
+2026-03-05 19:15:57.691 | INFO     | app.services.memory_service:_ensure_collection:86 - Collection 创建成功: rag_documents
+2026-03-05 19:15:57.691 | INFO     | app.services.memory_service:_init_milvus:58 - Milvus collections 初始化完成: user_memories, rag_documents
+2026-03-05 19:15:57.952 | WARNING  | app.services.memory_service:get_embedding:109 - Embedding 调用失败,使用 hash 降级: Client error '400 Bad Request' for url 'https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:embedContent?key=your_gemini_api_key_here'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-03-05 19:15:58.154 | WARNING  | app.services.memory_service:get_embedding:109 - Embedding 调用失败,使用 hash 降级: Client error '400 Bad Request' for url 'https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:embedContent?key=your_gemini_api_key_here'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-03-05 19:15:58.159 | ERROR    | app.services.memory_service:search_documents:399 - RAG 检索失败: <MilvusException: (code=0, message=failed to create query plan: cannot parse expression: (metadata like "%\"scope\": \"global\"%" || metadata like "%\"user_id\": \"test_user_001\"%"), error: unsupported pattern: %"scope": "global"%, only prefix pattern match like ab% and equal match like ab(no wildcards) are supported)>
+2026-03-05 19:15:58.161 | ERROR    | app.routers.chat_router:chat:38 - 聊天失败: name 'time' is not defined
+2026-03-05 19:15:59.278 | WARNING  | app.services.memory_service:get_embedding:109 - Embedding 调用失败,使用 hash 降级: Client error '400 Bad Request' for url 'https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:embedContent?key=your_gemini_api_key_here'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-03-05 19:15:59.374 | WARNING  | app.services.memory_service:get_embedding:109 - Embedding 调用失败,使用 hash 降级: Client error '400 Bad Request' for url 'https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:embedContent?key=your_gemini_api_key_here'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-03-05 19:15:59.380 | ERROR    | app.services.memory_service:search_documents:399 - RAG 检索失败: <MilvusException: (code=0, message=failed to create query plan: cannot parse expression: (metadata like "%\"scope\": \"global\"%" || metadata like "%\"user_id\": \"test_user_001\"%"), error: unsupported pattern: %"scope": "global"%, only prefix pattern match like ab% and equal match like ab(no wildcards) are supported)>
+2026-03-05 19:15:59.381 | ERROR    | app.routers.chat_router:chat:38 - 聊天失败: name 'time' is not defined
+2026-03-05 19:16:00.494 | WARNING  | app.services.memory_service:get_embedding:109 - Embedding 调用失败,使用 hash 降级: Client error '400 Bad Request' for url 'https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:embedContent?key=your_gemini_api_key_here'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-03-05 19:16:00.605 | WARNING  | app.services.memory_service:get_embedding:109 - Embedding 调用失败,使用 hash 降级: Client error '400 Bad Request' for url 'https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:embedContent?key=your_gemini_api_key_here'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-03-05 19:16:00.609 | ERROR    | app.services.memory_service:search_documents:399 - RAG 检索失败: <MilvusException: (code=0, message=failed to create query plan: cannot parse expression: (metadata like "%\"scope\": \"global\"%" || metadata like "%\"user_id\": \"test_user_001\"%"), error: unsupported pattern: %"scope": "global"%, only prefix pattern match like ab% and equal match like ab(no wildcards) are supported)>
+2026-03-05 19:16:00.611 | ERROR    | app.routers.chat_router:chat:38 - 聊天失败: name 'time' is not defined
+2026-03-05 19:16:04.179 | ERROR    | app.services.agent_service:process_realtime_audio:701 - 处理实时音频失败: name 'asdict' is not defined
+2026-03-05 19:16:05.184 | ERROR    | app.services.agent_service:process_realtime_audio:701 - 处理实时音频失败: name 'asdict' is not defined
+2026-03-05 19:16:06.198 | ERROR    | app.services.agent_service:process_realtime_audio:701 - 处理实时音频失败: name 'asdict' is not defined
+2026-03-05 19:16:07.212 | ERROR    | app.services.agent_service:process_realtime_audio:701 - 处理实时音频失败: name 'asdict' is not defined
+2026-03-05 19:16:08.226 | ERROR    | app.services.agent_service:get_speaking_assessment:733 - 口语评估失败: module 'app.services.redis_service' has no attribute 'get_data'
+2026-03-05 19:16:09.240 | ERROR    | app.services.agent_service:get_speaking_assessment:733 - 口语评估失败: module 'app.services.redis_service' has no attribute 'get_data'
+2026-03-05 19:16:10.245 | ERROR    | app.services.agent_service:get_speaking_assessment:733 - 口语评估失败: module 'app.services.redis_service' has no attribute 'get_data'

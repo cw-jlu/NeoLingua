@@ -1,0 +1,26 @@
+2026-03-05 19:51:12.684 | INFO     | app.main:startup:56 - AI Service 启动中... 端口: 8089
+2026-03-05 19:51:12.684 | INFO     | app.tools.base:register:29 - 工具注册成功: 获取当前时间 (get_time)
+2026-03-05 19:51:12.684 | INFO     | app.tools.base:register:29 - 工具注册成功: 联网搜索 (web_search)
+2026-03-05 19:51:12.684 | INFO     | app.tools.builtin_tools:register_builtin_tools:79 - 内置工具注册完成: 获取当前时间, 联网搜索
+2026-03-05 19:51:12.728 | INFO     | app.services.redis_service:get_redis_client:27 - Redis连接成功: localhost:6379/8
+2026-03-05 19:51:12.739 | INFO     | app.main:startup:66 - Redis连接成功
+2026-03-05 19:51:12.739 | INFO     | app.main:startup:70 - AI Service 启动完成
+2026-03-05 19:51:16.449 | WARNING  | app.services.memory_service:_init_milvus:61 - Milvus初始化失败(服务降级运行): No module named 'pymilvus'
+2026-03-05 19:51:16.961 | WARNING  | app.services.memory_service:_init_milvus:61 - Milvus初始化失败(服务降级运行): No module named 'pymilvus'
+2026-03-05 19:51:17.477 | WARNING  | app.services.memory_service:_init_milvus:61 - Milvus初始化失败(服务降级运行): No module named 'pymilvus'
+2026-03-05 19:51:20.026 | WARNING  | app.services.memory_service:_init_milvus:61 - Milvus初始化失败(服务降级运行): No module named 'pymilvus'
+2026-03-05 19:51:20.026 | WARNING  | app.services.memory_service:_init_milvus:61 - Milvus初始化失败(服务降级运行): No module named 'pymilvus'
+2026-03-05 19:51:20.199 | ERROR    | app.services.agent_service:chat:363 - AI Gateway调用失败: AI Gateway错误: 系统异常，请稍后重试
+2026-03-05 19:51:20.204 | WARNING  | app.services.memory_service:_init_milvus:61 - Milvus初始化失败(服务降级运行): No module named 'pymilvus'
+2026-03-05 19:51:21.214 | WARNING  | app.services.memory_service:_init_milvus:61 - Milvus初始化失败(服务降级运行): No module named 'pymilvus'
+2026-03-05 19:51:21.215 | WARNING  | app.services.memory_service:_init_milvus:61 - Milvus初始化失败(服务降级运行): No module named 'pymilvus'
+2026-03-05 19:51:21.380 | ERROR    | app.services.agent_service:chat:363 - AI Gateway调用失败: AI Gateway错误: 系统异常，请稍后重试
+2026-03-05 19:51:21.381 | WARNING  | app.services.memory_service:_init_milvus:61 - Milvus初始化失败(服务降级运行): No module named 'pymilvus'
+2026-03-05 19:51:22.389 | WARNING  | app.services.memory_service:_init_milvus:61 - Milvus初始化失败(服务降级运行): No module named 'pymilvus'
+2026-03-05 19:51:22.389 | WARNING  | app.services.memory_service:_init_milvus:61 - Milvus初始化失败(服务降级运行): No module named 'pymilvus'
+2026-03-05 19:51:22.565 | ERROR    | app.services.agent_service:chat:363 - AI Gateway调用失败: AI Gateway错误: 系统异常，请稍后重试
+2026-03-05 19:51:22.569 | WARNING  | app.services.memory_service:_init_milvus:61 - Milvus初始化失败(服务降级运行): No module named 'pymilvus'
+2026-03-05 19:51:30.193 | WARNING  | app.services.memory_service:_init_milvus:61 - Milvus初始化失败(服务降级运行): No module named 'pymilvus'
+2026-03-05 19:51:31.202 | WARNING  | app.services.memory_service:_init_milvus:61 - Milvus初始化失败(服务降级运行): No module named 'pymilvus'
+2026-03-05 19:51:32.215 | WARNING  | app.services.memory_service:_init_milvus:61 - Milvus初始化失败(服务降级运行): No module named 'pymilvus'
+2026-03-05 19:58:42.231 | INFO     | app.main:shutdown:76 - AI Service 关闭中...

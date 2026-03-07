@@ -1,0 +1,43 @@
+# Analysis Service 依赖
+# 注意：MFA相关依赖不在此安装，通过独立conda环境隔离
+
+# Web框架
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+
+# 数据库
+sqlalchemy==2.0.25
+pymysql==1.1.0
+alembic==1.13.1
+
+# Redis
+redis==5.0.1
+
+# Kafka
+kafka-python==2.0.2
+
+# MinIO对象存储
+minio==7.2.3
+
+# 音频处理（轻量级，不含MFA）
+praatio==6.0.0
+
+# STT 语音转文字
+faster-whisper==1.0.3
+
+# 数据分析
+pandas==2.1.4
+openpyxl==3.1.2
+
+# 数据模型
+pydantic==2.5.3
+pydantic-settings==2.1.0
+
+# HTTP客户端
+httpx==0.26.0
+
+# 环境变量
+python-dotenv==1.0.0
+
+# 日志
+loguru==0.7.2
