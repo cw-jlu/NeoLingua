@@ -1,8 +1,0 @@
-2026-03-05 19:45:32.975 | INFO     | app.main:startup:56 - AI Service 启动中... 端口: 8089
-2026-03-05 19:45:32.975 | INFO     | app.tools.base:register:29 - 工具注册成功: 获取当前时间 (get_time)
-2026-03-05 19:45:32.975 | INFO     | app.tools.base:register:29 - 工具注册成功: 联网搜索 (web_search)
-2026-03-05 19:45:32.975 | INFO     | app.tools.builtin_tools:register_builtin_tools:79 - 内置工具注册完成: 获取当前时间, 联网搜索
-2026-03-05 19:45:33.019 | INFO     | app.services.redis_service:get_redis_client:27 - Redis连接成功: localhost:6379/8
-2026-03-05 19:45:33.031 | INFO     | app.main:startup:66 - Redis连接成功
-2026-03-05 19:45:33.032 | INFO     | app.main:startup:70 - AI Service 启动完成
-2026-03-05 19:55:31.833 | INFO     | app.main:shutdown:76 - AI Service 关闭中...
